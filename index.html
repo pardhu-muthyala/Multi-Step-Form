@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi-step-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form1">
+            <h3>CREATE ACCOUNT</h3>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="password">
+            <input type="password" placeholder="Conform Password">
+            <div class="btn-box">
+                <button type="button" id="next1">Next</button>
+            </div>
+        </form>
+
+        <form id="form2">
+            <h3>SOCIAL LINKS</h3>
+            <input type="text" placeholder="GitHub">
+            <input type="text" placeholder="LinkedIn">
+            <input type="text" placeholder="FaceBook">
+            <div class="btn-box">
+               <button type="button" id="back1">Back</button>
+               <button type="button" id="next2">next</button>
+            </div>
+        </form>
+        <form id="form3">
+            <h3>PERSONAL INFO</h3>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="number" placeholder="Mobile No">
+            <div class="btn-box">
+               <button type="button" id="back2">Back</button>
+               <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>step1</small></div>
+            <div class="step-col"><small>step2</small></div>
+            <div class="step-col"><small>step3</small></div>
+
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
